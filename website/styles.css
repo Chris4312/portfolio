@@ -146,9 +146,8 @@ nav a:hover {
 }
 
 .redirect-button {
-  display: inline-block;
   padding: 10px 30px; 
-  margin: 5px 5px;
+  margin: 0 5px;
   background-color: rgb(112, 255, 112);
   border-radius: 8px;
   border: none;
