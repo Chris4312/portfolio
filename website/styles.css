@@ -222,4 +222,8 @@ footer {
     grid-template-columns: 1fr;
     max-width: 90%;
   }
+
+  #space-div {
+    min-width: 11px;
+  }
 }
