@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div style="display: block; min-width: 8%"></div>
+      <ul role="tablist">
+        <li>
+          <a class="tablink active" id="home-button" role="tab"
+            ><span>Startseite</span></a
+          >
+        </li>
+        <li>
+          <a class="tablink" id="projects-button" role="tab"
+            ><span>Projekte</span></a
+          >
+        </li>
+        <li>
+          <a class="tablink" id="about-button" role="tab"
+            ><span>Über&nbsp;mich</span></a
+          >
+        </li>
+      </ul>
+      <div
+        id="language-changer"
+        style="margin-left: 1%"
+        onclick="changeLanguage()"
+      >
+        <span>🌐</span>
+        <span id="de" style="font-size: 14px">Deutsch</span>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="tab active">
+        <h2 style="margin: 10px 0 25px 0">Willkommen!</h2>
+        <p>
+          Hallo, ich bin Cristian, ein Entwickler mit einer Leidenschaft für
+          Tools, Spiele, Apps und Websites. <br />
+          Ich spezialisiere mich auf JavaScript, Python und Java. Ich liebe es,
+          Ideen durch Code in die Realität umzusetzen.
+        </p>
+        <p style="font-style: italic; margin: 20px 0">
+          "Code ist nicht nur eine Fähigkeit, sondern eine Art, Probleme zu
+          lösen, zu lernen und zu erschaffen."
+        </p>
+        <div class="home-buttons">
+          <button onclick="openTab('projects')" class="redirect-button">
+            Meine Projekte ansehen
+          </button>
+          <button onclick="openTab('about')" class="redirect-button">
+            Mehr über mich erfahren
+          </button>
+        </div>
+      </section>
+
+      <section id="projects" class="tab">
+        <h2 style="margin: 10px 0 25px 0">Projekte</h2>
+        <div class="projects-grid" style="margin-bottom: 20px">
+          <div
+            onclick="window.open('https://www.roblox.com/games/133284656683046/Win-A-Parkour', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Arbeitsstunden-Rechner</h3>
+            <p>
+              Eine Android-App, die die Gesamtarbeitszeit berechnet, entwickelt
+              mit Kotlin und XML in Android Studio.
+            </p>
+            <img
+              src="imgs/appSs.png"
+              alt="Bild vom Spiel"
+              class="project-image"
+            />
+            <span style="cursor: pointer; color: blue">Zu GitHub</span>
+          </div>
+
+          <div
+            onclick="window.open('https://chris4312.github.io/portfolio/website/projects/TypingSpeedTest/index.html', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Tippgeschwindigkeit Test</h3>
+            <p>
+              Ein Projekt zur Verbesserung meiner Tippgeschwindigkeit und meiner
+              JavaScript-Kenntnisse.
+            </p>
+            <img
+              src="imgs/typingSpeedTextSs.png"
+              alt="Bild vom Spiel"
+              class="project-image"
+            />
+            <span style="cursor: pointer; color: blue">Zur Website</span>
+          </div>
+
+          <div
+            onclick="window.open('https://chris4312.github.io/portfolio/website/projects/randomWordPicker/index.html', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Zufallswort-Auswahl</h3>
+            <p>
+              Mein erstes Projekt für eine andere Person mit HTML, CSS und JS.
+            </p>
+            <img
+              src="imgs/randomWordPickerSs.png"
+              alt="Bild vom Tool"
+              class="project-image"
+            />
+            <span
+              style="cursor: pointer; color: blue"
+              onclick="window.open('https://github.com/Chris4312/portfolio/tree/main/website', '_blank')"
+              >Zur Website</span
+            >
+          </div>
+
+          <div
+            onclick="window.open('https://www.roblox.com/games/133284656683046/Win-A-Parkour', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Roblox Spiel</h3>
+            <p>
+              Dies ist ein Spiel, das ich in Lua entwickelt habe, um
+              Spieleentwicklung zu lernen.
+            </p>
+            <img
+              src="imgs/GameSs.png"
+              alt="Bild vom Spiel"
+              class="project-image"
+            />
+            <span style="cursor: pointer; color: blue">Zum Spiel</span>
+          </div>
+
+          <div
+            onclick="window.open('https://github.com/Chris4312/portfolio/tree/main/website/projects/minecraftMods', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Minecraft Mods</h3>
+            <p>
+              Ich habe einige Mods für einen YouTuber und Freunde mit Java
+              erstellt.
+            </p>
+            <img
+              src="imgs/minecraftModSs.png"
+              alt="Bild vom Mod"
+              class="project-image"
+            />
+            <span style="cursor: pointer; color: blue">Zu GitHub</span>
+          </div>
+
+          <div
+            onclick="window.open('https://chris4312.github.io/portfolio/website/projects/calculator/index.html', '_blank')"
+            class="project-card"
+          >
+            <h3 style="margin-bottom: 10px">Taschenrechner</h3>
+            <p>
+              Ein Projekt zum besseren Verständnis von JavaScript, HTML und CSS.
+            </p>
+            <img
+              src="imgs/calculatorSs.png"
+              alt="Bild vom Taschenrechner"
+              class="project-image"
+            />
+            <span style="cursor: pointer; color: blue">Zur Website</span>
+          </div>
+        </div>
+        <span
+          style="cursor: pointer; color: blue"
+          onclick="window.open('https://github.com/Chris4312/portfolio/tree/main/website/projects', '_blank')"
+          >Zu GitHub</span
+        >
+      </section>
+
+      <section id="about" class="tab">
+        <h2 style="margin: 10px 0 25px 0">Über mich</h2>
+        <h3 style="margin-top: 8%">Name:</h3>
+        <p>Cristian</p>
+        <h3 style="margin-top: 4%">Alter:</h3>
+        <p>18</p>
+        <h3 style="margin-top: 4%">Sprachen:</h3>
+        <p>Englisch, Rumänisch, Deutsch, Russisch</p>
+        <h3 style="margin-top: 4%">Persönliche Eigenschaften:</h3>
+        <p>Problemlösung, autodidaktisches Lernen, Kreativität, Teamarbeit</p>
+        <h3 style="margin-top: 4%">Programmiersprachen:</h3>
+        <p>Java, Lua, Python, JavaScript, HTML/CSS, Kotlin, XML</p>
+
+        <h3 style="margin-top: 4%">Projekte & Erfahrung:</h3>
+        <p class="story-text">
+          Hallo, ich bin Cristian. Ich bin ein Entwickler mit solider Grundlage
+          in der Programmierung und einer Liebe zum kreativen Problemlösen.
+        </p>
+
+        <p class="story-text">
+          Ich entdeckte das Programmieren mit 15, als ich begann, meine
+          Hausaufgaben mit Python zu automatisieren. Was als Neugier begann,
+          entwickelte sich schnell zu einem mächtigen Werkzeug. Ich erkannte,
+          wie hilfreich Code im Alltag sein kann, und beschloss, tiefer
+          einzutauchen.
+        </p>
+
+        <p class="story-text">
+          Bald baute ich kleine Anwendungen zum Spaß und lernte neue Sprachen.
+          Ich begann mit dem Modden von Minecraft, was mich dazu brachte, Java
+          zu lernen. Einer meiner ersten Mods erregte die Aufmerksamkeit eines
+          YouTubers, für den ich dann eigene Mods entwickelte. Diese Erfahrung
+          weckte mein Interesse an der Spieleentwicklung und zeigte mir die
+          kollaborative Seite der Programmierung.
+        </p>
+
+        <p class="story-text">
+          Mit der Zeit experimentierte ich mit verschiedenen Technologien: Ich
+          entwickelte Spiele in Lua, mobile Apps in Kotlin und lernte durch
+          echte Projekte über Serververbindungen, Datenstrukturen und mehr. Ich
+          brachte mir sogar 3D-Modellierung, UI-Design und Asset-Erstellung bei,
+          um meine Solo-Spieleentwicklung zu unterstützen.
+        </p>
+
+        <p class="story-text">
+          Nach einer Pause, in der ich mich auf die Schule konzentriert habe,
+          bin ich mit mehr Entschlossenheit denn je zur Programmierung
+          zurückgekehrt. Derzeit erweitere ich aktiv meine Fähigkeiten in der
+          Web- und Softwareentwicklung mit Kotlin, XML, HTML, CSS und
+          JavaScript, entwickle responsive Websites und Apps und vertiefe dabei
+          meine Full-Stack-Kompetenzen.
+        </p>
+
+        <p class="story-text">
+          Ich suche derzeit nach Möglichkeiten, mich als Entwickler
+          weiterzuentwickeln, an spannenden Projekten mitzuwirken und in einem
+          professionellen Umfeld weiter zu lernen.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Cristian</p>
+    </footer>
+  </body>
+</html>
